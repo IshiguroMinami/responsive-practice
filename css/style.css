@@ -7,6 +7,13 @@
     margin: 0 auto;
   }
 
+  .q2-box {
+    width: 300px;
+    height: 300px;
+    background: #ff0000;
+    margin: 0 auto;
+  }
+
   .q3 {
     display: flex;
     justify-content: center;
@@ -54,24 +61,29 @@
   .q5 {
     display: flex;
     justify-content: center;
+    position: relative;
   }
 
   .q5-box-red {
     background: #ff0000;
     width: 400px;
     height: 400px;
+    position: relative;
   }
 
   .q5-box-blue {
     background: #0008ff;
     width: 400px;
     height: 400px;
+    position: relative;
   }
 
   .q5-box-orange {
     background-color: #ff8400;
     width: 400px;
     height: 400px;
+    flex-direction: row-reverse;
+    position: relative;
   }
 
   .q6 {
@@ -83,17 +95,30 @@
     background-color: #00ff51;
     width: 400px;
     height: 400px;
+    order: 1;
+    position: relative;
   }
 
   .q6-box-yellow {
     background-color: #d4ff00;
     width: 400px;
     height: 400px;
+    order: 2;
+    position: relative;
   }
   .q6-box-pink {
     background-color: #ff00e1;
     width: 400px;
     height: 400px;
+    order: 3;
+    position: relative;
+  }
+
+  p {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
   }
 
   .q7 {
@@ -105,6 +130,7 @@
     background: #ff0000;
     width: 400px;
     height: 400px;
+    display: block;
   }
 
   .q7-box-blue {
@@ -118,23 +144,22 @@
     background: #22ff00;
     width: 400px;
     height: 400px;
+    display: block;
   }
 
 
 @media screen and (max-width: 960px) {
 
-.q1-box {
+.box {
   background: #ff0000;
   width: 200px;
   height: 200px;
-  margin: 0 auto;
 }
 
 .q2-box {
   background: #007bff;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
+  width: 300px;
+  height: 300px;
 }
 
 .q3 {
@@ -193,11 +218,6 @@
   height: 400px;
 }
 
-  .q6 {
-    display: flex;
-    justify-content: center;
-  }
-
   .q6-box-green {
     background-color: #00ff51;
     width: 400px;
@@ -235,13 +255,14 @@
     background: #0008ff;
     width: 400px;
     height: 400px;
-    display: block !important;
+    display: block;
   }
 
   .q7-box-green {
     background: #22ff00;
     width: 400px;
     height: 400px;
+    display: block;
   }
 
 }
